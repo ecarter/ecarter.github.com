@@ -13,6 +13,8 @@
 
 ## install
 
+    $ git clone git@github.com:ecarter/ecarter.github.com.git
+    $ cd ecarter.github.com
     $ npm install
 
 ## usage
