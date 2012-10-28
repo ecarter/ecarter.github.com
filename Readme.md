@@ -11,6 +11,10 @@
 * [stylus](learnboost.github.com/stylus/)
 * [serve](https://github.com/visionmedia/serve)
 
+## install
+
+    $ npm install
+
 ## usage
 
     $ make dev
