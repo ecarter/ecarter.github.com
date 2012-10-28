@@ -1,0 +1,56 @@
+body {
+  background: #333;
+  color: #fff;
+  font: 16px "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1.2em;
+}
+a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+.outer {
+  display: block;
+  width: 300px;
+  margin: 60px auto 0;
+}
+header {
+  padding: 0 20px;
+}
+header h1 {
+  display: inline-block;
+  background: rgba(0,0,0,0.4);
+  color: #333;
+  padding: 0.2em;
+  margin: 0 0 0 -0.2em;
+  text-transform: lowercase;
+  font-weight: normal;
+  font-size: 3.4em;
+  line-height: 0.6em;
+  overflow: hidden;
+  letter-spacing: -0.06em;
+}
+header p {
+  margin: 5px 0 0;
+  text-transform: lowercase;
+  font-size: 1em;
+  font-style: italic;
+}
+.content {
+  padding: 0 20px;
+}
+ul {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.6em;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  font-size: 1em;
+}
