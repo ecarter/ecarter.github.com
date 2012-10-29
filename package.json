@@ -9,6 +9,7 @@
   "devDependencies": {
     "jade": "*",
     "stylus": "*",
+    "nib": "*",
     "serve": "*"
   },
   "repository": {
