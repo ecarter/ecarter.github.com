@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "iconsregular";
+  src: url("../assets/icons.eot");
+  src: url("../assets/icons.eot?#iefix") format("embedded-opentype"),
+       url("../assets/icons.woff") format("woff"),
+       url("../assets/icons.ttf") format("truetype"),
+       url("../assets/icons.svg#iconsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"] {
+  font-family: iconsregular;
+  text-index: -2em;
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-github:before { content: "A"; }
+.icon-dribbble:before { content: "B"; }
+.icon-coderwall:before { content: "C"; }
+.icon-twitter:before { content: "D"; }
+.icon-email:before { content: "E"; }
 body {
   margin: 0;
   padding: 0;
@@ -7,25 +31,48 @@ body {
   line-height: 1.2em;
 }
 a {
-  color: rgba(255,255,255,0.4);
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
   color: #fff;
 }
 .outer {
+  zoom: 1;
   width: 100%;
+  margin: 0 auto;
   display: block;
-  margin: 60px auto 0;
+}
+.outer:before,
+.outer:after {
+  content: "";
+  display: table;
+}
+.outer:after {
+  clear: both;
 }
 header {
   display: none;
 }
 .content {
-  padding: 0 20px;
+  zoom: 1;
+  padding: 20px;
+}
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+}
+.content:after {
+  clear: both;
 }
 ul {
-  margin: 30px 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   line-height: 1.6em;
@@ -36,14 +83,57 @@ ul li {
   display: inline-block;
   float: left;
   width: 20%;
-  line-height: 80px;
+  line-height: 100px;
   text-align: center;
 }
-ul li a span {
+ul li a {
   display: block;
-  letter-spacing: 1px;
+  padding: 20px 0 0 0;
 }
-@media (max-width: 870px) {
+ul li a [class^='icon-'] {
+  display: block;
+  -webkit-transition: font-size 0.2s;
+  -moz-transition: font-size 0.2s;
+  -o-transition: font-size 0.2s;
+  -ms-transition: font-size 0.2s;
+  transition: font-size 0.2s;
+}
+ul li a:hover [class^='icon-'] {
+  font-size: 100px;
+}
+.github {
+  background: #000;
+}
+.dribbble {
+  background: #ea4c89;
+}
+.coderwall {
+  background: #1f8ace;
+}
+.twitter {
+  background: #00aced;
+}
+.email {
+  background: #4d4d4d;
+}
+[class^='icon-'] {
+  font-size: 80px;
+}
+@media (max-width: 420px) {
+  ul li {
+    line-height: 60px;
+  }
+  ul li a {
+    font-size: 11px;
+  }
+  ul li a [class^='icon-'] {
+    font-size: 60px;
+  }
+  ul li a:hover [class^='icon-'] {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1199px) {
   ul li {
     width: 50%;
   }
@@ -51,5 +141,8 @@ ul li a span {
 @media (min-width: 1200px) {
   .outer {
     max-width: 1200px;
+  }
+  .content {
+    margin-top: 200px;
   }
 }

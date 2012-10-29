@@ -1,3 +1,6 @@
+@import 'node_modules/nib'
+@import 'assets/icons.css'
+
 body
   margin 0
   padding 0
@@ -7,25 +10,29 @@ body
   line-height 1.2em
 
 a
-  color rgba(white, 0.4)
+  transition color 0.3s ease-in-out
+  //color rgba(white, 0.7)
+  color white
   text-decoration none
 
   &:hover
     color white
 
 .outer
+  clearfix()
   width 100%
+  margin 0 auto
   display block
-  margin 60px auto 0
 
 header
   display none
 
 .content
-  padding 0 20px
+  clearfix()
+  padding 20px
 
 ul
-  margin 30px 0 0
+  margin 0
   padding 0
   list-style none
   line-height 1.6em
@@ -36,15 +43,56 @@ ul
     display inline-block
     float left
     width 20%
-    line-height 80px
+    line-height 100px
     text-align center
 
     a
-      span
-        display block
-        letter-spacing 1px
+      display block
+      padding 20px 0 0 0
 
-@media (max-width: 870px)
+      [class^='icon-']
+        display block
+        transition font-size 0.2s
+
+      &:hover
+        [class^='icon-']
+          font-size 100px
+
+.github
+  background black
+
+.dribbble
+  background #EA4C89
+
+.coderwall
+  background #1F8ACE
+
+.twitter
+  background #00ACED
+
+.email
+  background #4D4D4D
+
+[class^='icon-']
+  font-size 80px
+
+@media (max-width: 420px)
+
+  ul
+    li
+      line-height 60px
+
+      a
+        font-size 11px
+
+        [class^='icon-']
+          font-size 60px
+
+        &:hover
+          [class^='icon-']
+            font-size 80px
+
+@media (max-width: 1199px)
   ul
     li
       width 50%
@@ -52,3 +100,6 @@ ul
 @media (min-width: 1200px)
   .outer
     max-width 1200px
+
+  .content
+    margin-top 200px
