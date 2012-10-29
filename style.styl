@@ -1,5 +1,7 @@
 body
-  background #333
+  margin 0
+  padding 0
+  background #222
   color white
   font 16px "Helvetica Neue", helvetica, arial, sans-serif
   line-height 1.2em
@@ -12,31 +14,12 @@ a
     color white
 
 .outer
+  width 100%
   display block
-  width 300px
   margin 60px auto 0
 
 header
-  padding 0 20px
-
-  h1
-    display inline-block
-    background rgba(black, 0.4)
-    color #333
-    padding 0.2em
-    margin 0 0 0 -0.2em
-    text-transform lowercase
-    font-weight normal
-    font-size 3.4em
-    line-height 0.6em
-    overflow hidden
-    letter-spacing -0.06em
-
-  p
-    margin 5px 0 0
-    text-transform lowercase
-    font-size 1em
-    font-style italic
+  display none
 
 .content
   padding 0 20px
@@ -50,6 +33,22 @@ ul
   li
     margin 0
     padding 0
+    display inline-block
+    float left
+    width 20%
+    line-height 80px
+    text-align center
 
     a
-      font-size 1em
+      span
+        display block
+        letter-spacing 1px
+
+@media (max-width: 870px)
+  ul
+    li
+      width 50%
+
+@media (min-width: 1200px)
+  .outer
+    max-width 1200px
