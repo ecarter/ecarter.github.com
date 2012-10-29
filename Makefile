@@ -1,9 +1,16 @@
-
-dev:
-	./node_modules/.bin/serve .
+MODULES=./node_modules
+BIN=$(MODULES)/.bin
+SERVE=$(BIN)/serve
+JADE=$(BIN)/jade
+STYLUS=$(BIN)/stylus
 
 build:
-	./node_modules/.bin/jade index.jade
-	./node_modules/.bin/stylus style.styl
+	@$(JADE) -P index.jade
+	@$(STYLUS) style.styl \
+		--include $(MODULES) \
+		--include-css
 
-PHONY: dev build
+dev:
+	$(SERVE) --no-stylus .
+
+.PHONY: build dev
