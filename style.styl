@@ -45,6 +45,7 @@ ul
     width 20%
     line-height 100px
     text-align center
+    overflow hidden
 
     a
       display block
@@ -52,11 +53,11 @@ ul
 
       [class^='icon-']
         display block
-        transition font-size 0.2s
+        transition all 0.3s
 
       &:hover
         [class^='icon-']
-          font-size 100px
+          transform scale(1.4)
 
 .github
   background black
@@ -87,10 +88,6 @@ ul
 
         [class^='icon-']
           font-size 60px
-
-        &:hover
-          [class^='icon-']
-            font-size 80px
 
 @media (max-width: 1199px)
   ul
