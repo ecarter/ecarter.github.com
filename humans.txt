@@ -1,0 +1,19 @@
+/* TEAM */
+
+Creative Coder / Artist: Erin Carter
+Site: http://erincarter.com
+Twitter: @dnvsfn
+Location: Oklahoma City, OK USA
+
+/* THANKS */
+
+Icon Glyphs: http://glyhpsapp.com
+Webfont Conversion: http://www.fontsquirrel.com/fontface/generator
+
+
+/* SITE */
+                            
+Last update: 2012/10/29
+Standards: HTML5, CSS3, Responsive Design
+Components: Stylus CSS, Jade Templates
+Software: Javascript, Node.js, Github Pages
