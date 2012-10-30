@@ -100,11 +100,11 @@ ul li a [class^='icon-'] {
   transition: all 0.3s;
 }
 ul li a:hover [class^='icon-'] {
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -o-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .github {
   background: #000;
@@ -146,5 +146,12 @@ ul li a:hover [class^='icon-'] {
   }
   .content {
     margin-top: 200px;
+  }
+  ul li a:hover [class^='icon-'] {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
   }
 }
