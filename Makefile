@@ -11,6 +11,6 @@ build:
 		--include-css
 
 dev:
-	$(SERVE) --no-stylus .
+	$(SERVE) --no-stylus --favicon favicon.ico .
 
 .PHONY: build dev
